@@ -144,7 +144,9 @@ function eduprime_scripts() {
     wp_enqueue_style( 'eduprime-style', get_stylesheet_uri(), array(), '1.0' );
 
     wp_enqueue_style( 'eduprime-poppins-font', 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap', array(), null );
-    wp_enqueue_style( 'eduprime-inter-font', 'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap', array(), null );
+    wp_enqueue_style( 'eduprime-nunito-font', 'https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap', array(), null );
+    wp_enqueue_style( 'eduprime-cairo-font', 'https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap', array(), null );
+    wp_enqueue_style( 'eduprime-tajawal-font', 'https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap', array(), null );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );

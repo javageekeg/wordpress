@@ -4,24 +4,24 @@
         "color": {
             "palette": [
                 {
-                    "name": "Primary",
-                    "slug": "primary",
-                    "color": "#1E88E5"
+                    "name": "Smart Blue",
+                    "slug": "smart-blue",
+                    "color": "#1A73E8"
                 },
                 {
-                    "name": "Secondary",
-                    "slug": "secondary",
-                    "color": "#F5F5F5"
+                    "name": "Energy Orange",
+                    "slug": "energy-orange",
+                    "color": "#FF7A00"
                 },
                 {
-                    "name": "Text",
-                    "slug": "text",
-                    "color": "#212121"
+                    "name": "Sky Light",
+                    "slug": "sky-light",
+                    "color": "#E8F1FF"
                 },
                 {
-                    "name": "Accent",
-                    "slug": "accent",
-                    "color": "#FFC107"
+                    "name": "Deep Navy",
+                    "slug": "deep-navy",
+                    "color": "#1B263B"
                 }
             ]
         },
@@ -33,16 +33,16 @@
                     "slug": "poppins"
                 },
                 {
-                    "fontFamily": "Inter, sans-serif",
-                    "name": "Inter",
-                    "slug": "inter"
+                    "fontFamily": "Nunito, sans-serif",
+                    "name": "Nunito",
+                    "slug": "nunito"
                 }
             ]
         }
     },
     "styles": {
         "typography": {
-            "fontFamily": "var(--wp--preset--font-family--inter)",
+            "fontFamily": "var(--wp--preset--font-family--nunito)",
             "fontSize": "16px"
         },
         "elements": {

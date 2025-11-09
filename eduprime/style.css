@@ -11,14 +11,32 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: eduprime
 */
 
+:root {
+    --smart-blue: #1A73E8;
+    --energy-orange: #FF7A00;
+    --sky-light: #E8F1FF;
+    --deep-navy: #1B263B;
+    --font-headings: 'Poppins', sans-serif;
+    --font-body: 'Nunito', 'Cairo', 'Tajawal', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--deep-navy);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headings);
+}
+
 /* Header */
 .site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #ffffff;
-    border-bottom: 1px solid #eaeaea;
+    background-color: #fff;
+    border-bottom: 1px solid var(--sky-light);
 }
 
 .sticky-header {
@@ -42,7 +60,7 @@ Text Domain: eduprime
 
 .main-navigation a {
     text-decoration: none;
-    color: #212121;
+    color: var(--deep-navy);
 }
 
 .main-navigation ul ul {
@@ -50,8 +68,8 @@ Text Domain: eduprime
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #ffffff;
-    border: 1px solid #eaeaea;
+    background-color: #fff;
+    border: 1px solid var(--sky-light);
     padding: 0.5rem;
     z-index: 100;
 }
@@ -69,22 +87,23 @@ Text Domain: eduprime
 .lang-switch, .login-button {
     margin-left: 1rem;
     padding: 0.5rem 1rem;
-    border: 1px solid #eaeaea;
+    border: 1px solid var(--smart-blue);
     border-radius: 8px;
     background-color: transparent;
+    color: var(--smart-blue);
     cursor: pointer;
 }
 
 .login-button {
-    background-color: #1E88E5;
-    color: #ffffff;
+    background-color: var(--smart-blue);
+    color: #fff;
     text-decoration: none;
 }
 
 /* Footer */
 .site-footer {
-    background-color: #121212;
-    color: #ffffff;
+    background-color: var(--deep-navy);
+    color: #fff;
     padding: 2rem;
 }
 
@@ -136,7 +155,7 @@ Text Domain: eduprime
 }
 
 .course-card {
-    border: 1px solid #eaeaea;
+    border: 1px solid var(--sky-light);
     border-radius: 8px;
     overflow: hidden;
     transition: box-shadow 0.3s;
@@ -162,7 +181,7 @@ Text Domain: eduprime
 
 /* Hero Section */
 .hero-section {
-    background-color: #F5F5F5;
+    background-color: var(--sky-light);
     text-align: center;
     padding: 4rem 2rem;
 }
@@ -170,20 +189,122 @@ Text Domain: eduprime
 .hero-title {
     font-size: 3rem;
     margin-bottom: 1rem;
+    color: var(--deep-navy);
 }
 
 .hero-subtitle {
     font-size: 1.25rem;
     margin-bottom: 2rem;
+    color: var(--deep-navy);
 }
 
 .hero-cta {
-    background-color: #FFC107;
-    color: #212121;
+    background-color: var(--energy-orange);
+    color: #fff;
     padding: 1rem 2rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
+}
+
+/* Homepage Sections */
+.about-section {
+    padding: 4rem 2rem;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.programs-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.programs-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.program-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-bottom: 3px solid var(--energy-orange);
+}
+
+.testimonials-section {
+    padding: 4rem 2rem;
+}
+
+.testimonials-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonial-carousel {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    min-width: 250px;
+}
+
+.join-us-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: linear-gradient(45deg, var(--smart-blue), var(--energy-orange));
+    color: #fff;
+}
+
+.homepage-footer {
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-social a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
 }
 
 /* Responsive Styles */
@@ -207,5 +328,10 @@ Text Domain: eduprime
     .footer-widget-area {
         width: 100%;
         margin-bottom: 2rem;
+    }
+
+    .about-container,
+    .programs-container {
+        flex-direction: column;
     }
 }
