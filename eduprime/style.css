@@ -1,0 +1,211 @@
+/*
+Theme Name: EduPrime
+Author: Jules
+Description: A professional e-learning theme compatible with Tutor LMS and WooCommerce.
+Version: 1.0
+Requires at least: 5.8
+Tested up to: 6.0
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: eduprime
+*/
+
+/* Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Navigation */
+.main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-navigation li {
+    position: relative;
+    margin: 0 1rem;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.main-navigation ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    padding: 0.5rem;
+    z-index: 100;
+}
+
+.main-navigation ul li:hover > ul {
+    display: block;
+}
+
+/* Header Actions */
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.lang-switch, .login-button {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: #1E88E5;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 2rem;
+}
+
+.footer-widgets {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-widget-area {
+    width: 30%;
+}
+
+.site-info {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Main Content */
+.content-area {
+    padding: 2rem;
+}
+
+.site-main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.entry-header {
+    margin-bottom: 1.5rem;
+}
+
+.entry-title {
+    font-size: 2.25rem;
+}
+
+.entry-content {
+    line-height: 1.6;
+}
+
+/* Course Archive */
+.archive .course-archive-header {
+    margin-bottom: 2rem;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.course-card {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+
+.course-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.course-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+.course-card .entry-header,
+.course-card .entry-summary {
+    padding: 1rem;
+}
+
+.course-card .entry-title {
+    font-size: 1.25rem;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.hero-cta {
+    background-color: #FFC107;
+    color: #212121;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+    }
+
+    .main-navigation {
+        margin-top: 1rem;
+    }
+
+    .header-actions {
+        margin-top: 1rem;
+    }
+
+    .footer-widgets {
+        flex-direction: column;
+    }
+
+    .footer-widget-area {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
